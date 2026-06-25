@@ -1,0 +1,53 @@
+{
+    // ── Tailwind IntelliSense ─────────────────────────────────────────────────
+    "tailwindCSS.experimental.classRegex": [
+        [
+            "slots:\\s*\\{([^}]*)\\}",
+            "[\"'`]([^\"'`]*)[\"'`]"
+        ],
+        [
+            ":\\s*[\"'`]([^\"'`]*)[\"'`]"
+        ]
+    ],
+    "tailwindCSS.includeLanguages": {
+        "typescript": "javascript"
+    },
+    // ── i18n Ally ─────────────────────────────────────────────────────────────
+    "i18n-ally.localesPaths": [
+        "i18n",
+        "i18n/locales"
+    ],
+    // ── ESLint flat config (eslint.config.mjs) ────────────────────────────────
+    "eslint.useFlatConfig": true,
+    // ── ESLint as the single source of truth for formatting ───────────────────
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    // Disable the built-in formatter for file types ESLint handles
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.formatOnSave": false
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.formatOnSave": false
+    },
+    "i18n-ally.keystyle": "nested"
+}

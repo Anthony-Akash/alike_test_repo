@@ -1,0 +1,381 @@
+{
+  "common": {
+    "appName": "زيارة دبي - العروض والصفقات",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما",
+    "retry": "حاول مرة أخرى",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "seeAll": "عرض الكل",
+    "viewDetails": "عرض التفاصيل",
+    "noResults": "لا توجد نتائج",
+    "search": "بحث",
+    "filters": "تصفية",
+    "clearFilters": "مسح جميع الفلاتر",
+    "sortBy": "ترتيب حسب",
+    "showMore": "عرض المزيد",
+    "showLess": "عرض أقل",
+    "currency": "د.إ",
+    "from": "من",
+    "perPerson": "للشخص",
+    "perNight": "لليلة",
+    "off": "خصم",
+    "free": "مجاني",
+    "shareLink": "مشاركة",
+    "copyLink": "نسخ الرابط",
+    "linkCopied": "تم نسخ الرابط!"
+  },
+  "header": {
+    "govOfDubai": "حكومة دبي",
+    "visitDubai": "زيارة دبي",
+    "advisoryText": "سلامتك هي أولويتنا. ",
+    "advisoryLinkText": "اقرأ إرشادات السفر إلى دبي."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "deals": "العروض",
+    "attractions": "المعالم السياحية",
+    "passes": "التذاكر",
+    "holidayPackages": "باقات العطلات",
+    "hotels": "الفنادق",
+    "myAccount": "حسابي",
+    "cart": "السلة",
+    "language": "English",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج"
+  },
+  "home": {
+    "heroTitle": "اكتشف أفضل العروض والصفقات في دبي",
+    "heroSubtitle": "معالم سياحية حصرية، تذاكر، باقات عطلات وعروض فنادق",
+    "heroCta": "استكشف العروض",
+    "featuredDeals": "العروض المميزة",
+    "topAttractions": "أبرز المعالم السياحية",
+    "popularPasses": "التذاكر الأكثر طلباً",
+    "categories": "تصفح حسب الفئة"
+  },
+  "deals": {
+    "title": "عروض دبي",
+    "subtitle": "اكتشف عروضاً رائعة في جميع أنحاء دبي",
+    "categories": {
+      "attractions": "المعالم السياحية",
+      "dining": "تناول الطعام",
+      "hotels": "الفنادق",
+      "shopping": "التسوق"
+    },
+    "visitWebsite": "زيارة الموقع",
+    "externalLink": "سيتم فتح هذا في علامة تبويب جديدة",
+    "learnMore": "اكتشف المزيد",
+    "moreInfo": "مزيد من المعلومات",
+    "bookNow": "احجز الآن",
+    "imageNumber": "الصورة {index}"
+  },
+  "attractions": {
+    "title": "المعالم السياحية",
+    "subtitle": "استكشف أبرز معالم دبي السياحية",
+    "duration": "المدة",
+    "ageRestriction": "القيود العمرية",
+    "cancellation": "سياسة الإلغاء",
+    "highlights": "أبرز المزايا",
+    "included": "ما هو مشمول",
+    "excluded": "ما هو غير مشمول",
+    "selectDate": "اختر التاريخ",
+    "selectVariant": "اختر الخيار",
+    "bookNow": "احجز الآن",
+    "addToCart": "أضف إلى السلة",
+    "addedToCart": "تمت الإضافة إلى السلة!"
+  },
+  "passes": {
+    "title": "التذاكر",
+    "subtitle": "احصل على المزيد ووفر أكثر مع تذاكر دبي",
+    "validity": "صالح لمدة {days} أيام",
+    "includes": "يشمل {count} معلم سياحي",
+    "passType": {
+      "single": "تذكرة مفردة",
+      "multi": "تذكرة متعددة",
+      "flexi": "تذكرة مرنة"
+    },
+    "buyPass": "شراء التذكرة"
+  },
+  "holidayPackages": {
+    "title": "باقات العطلات",
+    "subtitle": "باقات عطلات متكاملة إلى دبي",
+    "nights": "{count} ليالٍ",
+    "flightsIncluded": "رحلة الطيران مشمولة",
+    "transfersIncluded": "النقل مشمول",
+    "hotelIncluded": "الفندق: {name}",
+    "itinerary": "البرنامج",
+    "day": "اليوم {number}",
+    "enquireNow": "استفسر الآن",
+    "bookPackage": "احجز الباقة",
+    "leadForm": {
+      "title": "هل أنت مهتم بهذه الباقة؟",
+      "subtitle": "املأ بياناتك وسنعاود الاتصال بك",
+      "travelDates": "تواريخ السفر المفضلة",
+      "guests": "عدد الضيوف",
+      "message": "هل لديك متطلبات خاصة؟",
+      "submit": "إرسال الاستفسار",
+      "success": "تم تقديم استفسارك! سنتواصل معك خلال 24 ساعة.",
+      "error": "فشل إرسال الاستفسار. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "hotels": {
+    "title": "الفنادق",
+    "subtitle": "ابحث عن الفندق المثالي في دبي",
+    "starRating": "فندق {stars} نجوم",
+    "amenities": "وسائل الراحة",
+    "rooms": "الغرف المتاحة",
+    "selectRoom": "اختر الغرفة",
+    "perNight": "لليلة",
+    "guests": "{count} ضيوف",
+    "bedType": "نوع السرير",
+    "roomSize": "مساحة الغرفة",
+    "checkIn": "تسجيل الوصول",
+    "checkOut": "تسجيل المغادرة"
+  },
+  "cart": {
+    "title": "السلة",
+    "empty": "سلة التسوق فارغة",
+    "emptySubtitle": "اكتشف عروضاً رائعة وأضفها إلى سلة التسوق",
+    "exploreCta": "استكشف العروض",
+    "item": "{count} عنصر | {count} عناصر",
+    "subtotal": "المجموع الفرعي",
+    "tax": "ضريبة القيمة المضافة (5%)",
+    "discount": "الخصم",
+    "total": "الإجمالي",
+    "promoCode": "رمز ترويجي",
+    "applyPromo": "تطبيق",
+    "removeItem": "إزالة",
+    "updateQuantity": "تحديث الكمية",
+    "proceedToCheckout": "متابعة الدفع",
+    "continueShopping": "متابعة التسوق"
+  },
+  "checkout": {
+    "title": "الدفع",
+    "steps": {
+      "contact": "معلومات الاتصال",
+      "payment": "الدفع",
+      "review": "المراجعة"
+    },
+    "contact": {
+      "title": "معلومات الاتصال",
+      "firstName": "الاسم الأول",
+      "lastName": "الاسم الأخير",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "guestCheckout": "متابعة كزائر",
+      "loginPrompt": "هل لديك حساب بالفعل؟",
+      "loginLink": "تسجيل الدخول"
+    },
+    "payment": {
+      "title": "طريقة الدفع",
+      "cardNumber": "رقم البطاقة",
+      "expiry": "تاريخ الانتهاء",
+      "cvv": "رمز CVV",
+      "nameOnCard": "الاسم على البطاقة",
+      "billingAddress": "عنوان الفوترة",
+      "sameAsContact": "نفس عنوان الاتصال"
+    },
+    "review": {
+      "title": "مراجعة الطلب",
+      "orderSummary": "ملخص الطلب",
+      "contactInfo": "معلومات الاتصال",
+      "paymentInfo": "معلومات الدفع",
+      "agreeToTerms": "أوافق على الشروط والأحكام",
+      "placeOrder": "تقديم الطلب",
+      "processing": "جاري معالجة طلبك..."
+    },
+    "success": {
+      "title": "تم تأكيد الطلب!",
+      "subtitle": "شكراً لك على طلبك",
+      "orderNumber": "رقم الطلب: {number}",
+      "emailSent": "تم إرسال تأكيد بالبريد الإلكتروني إلى {email}",
+      "viewOrder": "عرض الطلب",
+      "backToHome": "الرئيسية"
+    },
+    "failed": {
+      "title": "فشل الدفع",
+      "subtitle": "تعذرت معالجة دفعتك",
+      "tryAgain": "حاول مرة أخرى",
+      "contactSupport": "اتصل بالدعم"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "مرحباً بعودتك",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "forgotPassword": "هل نسيت كلمة المرور؟",
+      "noAccount": "ليس لديك حساب؟",
+      "registerLink": "إنشاء حساب"
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "firstName": "الاسم الأول",
+      "lastName": "الاسم الأخير",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "phone": "رقم الهاتف (اختياري)",
+      "submit": "إنشاء حساب",
+      "hasAccount": "هل لديك حساب بالفعل؟",
+      "loginLink": "تسجيل الدخول"
+    },
+    "forgotPassword": {
+      "title": "إعادة تعيين كلمة المرور",
+      "email": "البريد الإلكتروني",
+      "submit": "إرسال رابط إعادة التعيين",
+      "sent": "إذا كان هناك حساب مرتبط بهذا البريد الإلكتروني، ستتلقى رابط إعادة تعيين",
+      "backToLogin": "العودة إلى تسجيل الدخول"
+    }
+  },
+  "account": {
+    "title": "حسابي",
+    "dashboard": "لوحة التحكم",
+    "orders": "طلباتي",
+    "wishlist": "المفضلة",
+    "profile": "الملف الشخصي",
+    "orderHistory": {
+      "title": "سجل الطلبات",
+      "empty": "لا توجد طلبات بعد",
+      "orderNumber": "الطلب #{number}",
+      "status": {
+        "pending": "قيد الانتظار",
+        "confirmed": "مؤكد",
+        "processing": "قيد المعالجة",
+        "completed": "مكتمل",
+        "cancelled": "ملغي",
+        "refunded": "مسترد"
+      },
+      "viewDetails": "عرض التفاصيل"
+    },
+    "wishlistPage": {
+      "title": "مفضلتي",
+      "empty": "قائمة المفضلة فارغة",
+      "remove": "إزالة"
+    }
+  },
+  "search": {
+    "title": "نتائج البحث",
+    "placeholder": "ابحث عن العروض والمعالم السياحية والتذاكر...",
+    "resultsFor": "نتائج عن \"{query}\"",
+    "noResults": "لا توجد نتائج عن \"{query}\"",
+    "suggestions": "حاول البحث عن",
+    "filters": {
+      "type": "النوع",
+      "priceRange": "نطاق السعر",
+      "rating": "التقييم",
+      "category": "الفئة"
+    },
+    "sort": {
+      "newest": "الأحدث",
+      "priceAsc": "السعر: من الأقل إلى الأعلى",
+      "priceDesc": "السعر: من الأعلى إلى الأقل",
+      "popular": "الأكثر شيوعاً",
+      "rating": "الأعلى تقييماً"
+    }
+  },
+  "sale": {
+    "noResult": {
+      "title": "لا توجد نتائج",
+      "description": "حاول تعديل البحث أو الفلاتر للعثور على ما تبحث عنه."
+    }
+  },
+  "explore": {
+    "searchPlaceholder": "ابحث عن العروض في جميع أنحاء دبي",
+    "searchButton": "بحث",
+    "suggestionsLabel": "جرّب البحث عن: ",
+    "allCategories": "جميع الفئات",
+    "resultsCount": "تم العثور على {count} نتيجة",
+    "loadMore": "عرض المزيد",
+    "suggestions": [
+      "عائلة",
+      "دبي مول",
+      "البرانش"
+    ]
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة",
+    "subtitle": "اعثر على إجابات للأسئلة الشائعة"
+  },
+  "footer": {
+    "copyright": "حقوق النشر © {year}. يتم تشغيل هذا الموقع من قبل دائرة الاقتصاد والسياحة في دبي.",
+    "terms": "الشروط والأحكام",
+    "privacy": "سياسة الخصوصية",
+    "contact": "اتصل بنا",
+    "followUs": "تابعنا",
+    "backToTop": "العودة إلى الأعلى",
+    "poweredBy": "مدعوم من قبل",
+    "privacyNotice": "إشعار الخصوصية",
+    "cookieNotice": "إشعار ملفات تعريف الارتباط",
+    "description": "موقع Visit Dubai هو الدليل السياحي الرسمي في دبي. خطط لزيارتك واستكشف أبرز المعالم والوجهات السياحية، واطلع على كلّ ما تحتاج إليه من معلومات عن الفعاليات والمهرجانات وتجارب التسوق والترفيه والتراث وغيرها.",
+    "popularLinks": "روابط شائعة",
+    "helpfulInformation": "معلومات مفيدة",
+    "relatedSites": "مواقع ذات صلة",
+    "exploreDubai": "استكشف دبي",
+    "thingsToDo": "أشياء للقيام بها",
+    "whatsOn": "الفعاليات",
+    "articles": "مقالات",
+    "placesToVisit": "أماكن للزيارة",
+    "planYourTrip": "خطط لرحلتك",
+    "visaGuide": "دليل التأشيرات",
+    "faq": "الأسئلة الشائعة",
+    "travelAdvisory": "نصائح السفر",
+    "investInDubai": "استثمر في دبي",
+    "dubaiDET": "دائرة الاقتصاد والسياحة",
+    "consumerRights": "حقوق المستهلك",
+    "dubaiFoundersHQ": "مقر مؤسسي دبي",
+    "travelTrade": "السفر التجاري",
+    "retireInDubai": "التقاعد في دبي",
+    "studyDubai": "الدراسة في دبي",
+    "mice": "اجتماعات وحوافز ومؤتمرات ومعارض",
+    "termsOfUse": "شروط الاستخدام",
+    "cookiePreferenceCentre": "مركز تفضيلات ملفات تعريف الارتباط",
+    "sitemap": "خريطة الموقع",
+    "siteLastUpdated": "آخر تحديث للموقع",
+    "recaptcha": "هذا الموقع محمي بواسطة reCAPTCHA وتنطبق {privacyPolicy} و{termsOfService} من Google.",
+    "recaptchaPrivacyPolicy": "سياسة الخصوصية",
+    "recaptchaTermsOfService": "شروط الخدمة",
+    "contactUs": "اتصل بنا",
+    "opensInNewWindow": "يفتح في نافذة جديدة",
+    "socialFollowAriaLabel": "تابع زيارة دبي على {platform} | يفتح في نافذة جديدة"
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "email": "يرجى إدخال بريد إلكتروني صالح",
+    "phone": "يرجى إدخال رقم هاتف صالح",
+    "minLength": "يجب أن يكون على الأقل {min} أحرف",
+    "maxLength": "يجب أن يكون بحد أقصى {max} أحرف",
+    "passwordMatch": "كلمات المرور غير متطابقة",
+    "passwordStrength": "يجب أن تكون كلمة المرور 8 أحرف على الأقل مع رقم وحرف واحد",
+    "agreeToTerms": "يجب الموافقة على الشروط والأحكام"
+  },
+  "errors": {
+    "generic": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+    "network": "خطأ في الشبكة",
+    "networkDescription": "تعذر الاتصال بالخادم. يرجى التحقق من اتصالك بالإنترنت.",
+    "notFound": "الصفحة غير موجودة",
+    "notFoundDescription": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "unauthorized": "يرجى تسجيل الدخول للمتابعة",
+    "forbidden": "ليس لديك إذن للوصول إلى هذا",
+    "serverError": "الخدمة غير متاحة",
+    "serverErrorDescription": "نواجه صعوبات تقنية. يرجى المحاولة لاحقاً."
+  },
+  "meta": {
+    "homeTitle": "عروض وصفقات دبي | زوروا دبي",
+    "homeDescription": "استفد  من مجموعة من أروع العروض الحصرية في فنادق دبي ومنتجعاتها ومطاعمها  ووجهاتها ومعالمها السياحية. استكشف عروض دبي الرائعة واحجز رحلتك الآن!",
+    "dealsTitle": "عروض وصفقات دبي | زوروا دبي",
+    "attractionsTitle": "معالم دبي السياحية | احجز التذاكر والجولات",
+    "passesTitle": "تذاكر دبي | تذاكر متعددة المعالم",
+    "holidayPackagesTitle": "باقات عطلات دبي | عروض شاملة",
+    "hotelsTitle": "فنادق دبي | أفضل الأسعار والعروض"
+  }
+}

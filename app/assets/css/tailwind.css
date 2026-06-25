@@ -1,0 +1,402 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+/*
+ * Design System Tokens — Deals & Offers (Figma node 2122-17583)
+ *
+ * Colors sourced from Figma variables:
+ *   primary:           #3377c4  → hsl(211 59% 49%)
+ *   primary-variant:   #e6f2ff  → hsl(211 100% 95%)
+ *   primary-vd:        #035e88  → hsl(200 95% 27%)
+ *   on-primary-vd-var: #004b6f  → hsl(199 100% 22%)
+ *   secondary:         #9c2677  → hsl(315 61% 38%)
+ *   surface:           #ffffff
+ *   surface-bright:    #fbf8fd  → hsl(270 50% 99%)
+ *   surface-dim:       #f5f3f7  → hsl(270 17% 96%)
+ *   surface-variant:   #dde2eb  → hsl(215 21% 89%)
+ *   surface-container: #e6eff7  → hsl(208 43% 93%)
+ *   on-surface:        #000000
+ *   on-surface-var:    #40484f  → hsl(207 12% 28%)
+ *   on-background:     #1b1b1f  → hsl(240 4% 11%)
+ *   text-title:        #030712  → hsl(225 78% 5%)
+ *   neutral-highest:   #4a5565  → hsl(216 16% 35%)
+ *   neutral-lowest:    #f9fafb  → hsl(210 20% 98%)
+ *   outline:           #e4e2e6  → hsl(270 8% 90%)
+ *   icon-orange:       #ffaa46  → hsl(36 100% 64%)
+ *   on-disabled:       #5e5e62  → hsl(240 2% 37%)
+ *
+ * Typography:
+ *   font-family: "Dubai"
+ *   sizes: 12 (small) / 14 (caption) / 16 (body) / 20 (h6) / 24 (h5) / 40 (h2) / 68 (display)
+ *   line-heights: 16 / 20 / 24 / 28 / 32 / 48 / 80
+ *
+ * Spacing/Sizing:
+ *   gap-xs:4  gap-sm:8  gap-md:12  gap-lg:16  gap-xl:24  gap-xxl:32  gap-3xl:64
+ *   pad-xs:4  pad-sm:8  pad-md:12  pad-lg:16  pad-xl:24  pad-3xl:64
+ *
+ * Border radius:
+ *   sm:12  md:16  lg:24  xl:32  2xl:40  pill:999
+ */
+
+/* Fonts — regular @theme so font-* utilities are generated */
+@theme {
+  --font-sans:
+    "Dubai", sans-serif; /* weights: 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold) */
+  --font-arabic: "GE SS Two", sans-serif;
+}
+
+@theme inline {
+  /* ── Colors ─────────────────────────────────────────── */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-variant: var(--primary-variant);
+  --color-primary-variant-hover: var(--primary-variant-hover);
+  --color-primary-variant-focused: var(--primary-variant-focused);
+
+  --color-primary-vd: var(--primary-vd);
+  --color-primary-vd-foreground: var(--primary-vd-foreground);
+  --color-primary-vd-variant: var(--primary-vd-variant);
+  --color-on-primary-vd-variant: var(--on-primary-vd-variant);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Surface scale */
+  --color-surface: var(--surface);
+  --color-surface-bright: var(--surface-bright);
+  --color-surface-dim: var(--surface-dim);
+  --color-surface-variant: var(--surface-variant);
+  --color-surface-outline: var(--surface-outline);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-on-background: var(--on-background);
+
+  /* Text */
+  --color-text-title: var(--text-title);
+
+  /* Neutral */
+  --color-neutral-highest: var(--neutral-highest);
+  --color-neutral-lowest: var(--neutral-lowest);
+
+  /* Semantic / icon */
+  --color-icon-orange: var(--icon-orange);
+  --color-outline: var(--outline);
+  --color-on-disabled: var(--on-disabled);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ── Border Radius ───────────────────────────────────── */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 40px;
+  --radius-pill: 999px;
+
+  /* ── Spacing (gap + padding tokens) ─────────────────── */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-3xl: 64px;
+
+  /* ── Typography ──────────────────────────────────────── */
+  --font-sans: "Dubai", ui-sans-serif, system-ui, sans-serif;
+
+  --text-small: 12px;
+  --text-caption: 14px;
+  --text-body: 16px;
+  --text-h6: 20px;
+  --text-h5: 24px;
+  --text-h4: 28px;
+  --text-h3: 22px;
+  --text-h2: 40px;
+  --text-display: 68px;
+
+  --leading-small: 16px;
+  --leading-caption: 20px;
+  --leading-body: 24px;
+  --leading-h6: 28px;
+  --leading-h5: 32px;
+  --leading-h4: 30px;
+  --leading-h3: 26px;
+  --leading-h2: 48px;
+  --leading-display: 80px;
+
+  /* ── Shadows ─────────────────────────────────────────── */
+  --shadow-xsm: 0 1px 2px 0 #1018280a;
+  --shadow-elevation-3: 0 8px 24px 0 #0000001f;
+
+  /* ── Animation ───────────────────────────────────────── */
+  --animate-scroll-dot: scroll-dot 1.8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+
+  @keyframes scroll-dot {
+    0% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-50%) translateY(10px);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-50%) translateY(10px);
+      opacity: 0;
+    }
+    51% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 0;
+    }
+    70% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* ──────────────────────────────────────────────────────────
+   LIGHT THEME  (default)
+   ────────────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    /* Core surfaces */
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(0 0% 0%);
+
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(0 0% 0%);
+
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(0 0% 0%);
+
+    /* Primary */
+    --primary: hsl(200 95% 27%);
+    --primary-foreground: hsl(0 0% 100%);
+    --primary-variant: hsl(211 100% 95%); /* #e6f2ff */
+    --primary-variant-hover: hsl(209 100% 92%); /* #D5EBFF */
+    --primary-variant-focused: hsl(207 100% 86%); /* #B7DFFF */
+
+    /* Primary VD (dark variant) — #035e88 */
+    --primary-vd: hsl(200 95% 27%);
+    --primary-vd-foreground: hsl(0 0% 100%);
+    --primary-vd-variant: hsl(211 100% 95%); /* #e6f2ff */
+    --on-primary-vd-variant: hsl(199 100% 22%); /* #004b6f */
+
+    /* Secondary — #9c2677 */
+    --secondary: hsl(315 61% 38%);
+    --secondary-foreground: hsl(0 0% 100%);
+
+    /* Muted */
+    --muted: hsl(270 17% 96%); /* surface-dim */
+    --muted-foreground: hsl(207 12% 28%); /* on-surface-variant */
+
+    /* Accent */
+    --accent: hsl(211 100% 95%); /* primary-variant */
+    --accent-foreground: hsl(211 59% 49%); /* primary */
+
+    /* Destructive */
+    --destructive: hsl(0 84% 60%);
+    --destructive-foreground: hsl(0 0% 100%);
+
+    /* Border / input / ring */
+    --border: hsl(270 8% 90%); /* outline: #e4e2e6 */
+    --input: hsl(270 8% 90%);
+    --ring: hsl(211 59% 49%);
+
+    /* Surface scale */
+    --surface: hsl(0 0% 100%);
+    --surface-bright: hsl(270 50% 99%); /* #fbf8fd */
+    --surface-dim: hsl(270 17% 96%); /* #f5f3f7 */
+    --surface-variant: hsl(215 21% 89%); /* #dde2eb */
+    --surface-outline: hsl(270 8% 90%); /* #e4e2e6 */
+    --surface-container-low: hsl(208 43% 93%); /* #e6eff7 */
+    --on-surface: hsl(0 0% 0%);
+    --on-surface-variant: hsl(207 12% 28%); /* #40484f */
+    --on-background: hsl(240 4% 11%); /* #1b1b1f */
+
+    /* Text */
+    --text-title: hsl(225 78% 5%); /* #030712 */
+
+    /* Neutral */
+    --neutral-highest: hsl(216 16% 35%); /* #4a5565 */
+    --neutral-lowest: hsl(210 20% 98%); /* #f9fafb */
+
+    /* Semantic */
+    --icon-orange: hsl(36 100% 64%); /* #ffaa46 */
+    --outline: hsl(270 8% 90%); /* #e4e2e6 */
+    --on-disabled: hsl(240 2% 37%); /* #5e5e62 */
+
+    /* Sidebar */
+    --sidebar: hsl(0 0% 98%);
+    --sidebar-foreground: hsl(0 0% 0%);
+    --sidebar-accent: hsl(211 100% 95%);
+    --sidebar-accent-foreground: hsl(211 59% 49%);
+    --sidebar-border: hsl(270 8% 90%);
+    --sidebar-ring: hsl(211 59% 49%);
+  }
+}
+
+/* ──────────────────────────────────────────────────────────
+   BASE RESETS
+   ────────────────────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Apply Arabic font + Western numerals — see RTL block below */
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Dubai — manually declared so all weights (300/400/500/700) are guaranteed
+   ───────────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: "Dubai";
+  src: url("/fonts/Dubai/Dubai-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dubai";
+  src: url("/fonts/Dubai/Dubai-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dubai";
+  src: url("/fonts/Dubai/Dubai-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dubai";
+  src: url("/fonts/Dubai/Dubai-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   GE SS Two — Arabic font (manually declared, @nuxt/fonts can't auto-match)
+   ───────────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: "GE SS Two";
+  src: url("/fonts/GESSTwo/GESSTwo-Light.otf") format("opentype");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE SS Two";
+  src: url("/fonts/GESSTwo/GESSTwo-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE SS Two";
+  src: url("/fonts/GESSTwo/GESSTwo-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   FORCE WESTERN ARABIC NUMERALS (0-9)
+   Prevents browsers/fonts from rendering Arabic-Indic digits (٠١٢٣٤٥٦٧٨٩)
+   when the document lang is "ar" or dir is RTL.
+   Uses @font-face override to enforce Western numerals for 0-9 range.
+   ───────────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: "Western Numerals";
+  src:
+    local("Dubai"), local("Arial"), local("Helvetica Neue"), local("Helvetica");
+  unicode-range:
+    U+0030-0039, U+0025, U+002B, U+002D, U+002E; /* 0-9, %, +, -, . */
+}
+
+[dir="rtl"] {
+  font-family: "Western Numerals", var(--font-arabic);
+}
+
+[dir="rtl"] input[type="tel"],
+[dir="rtl"] input[type="number"],
+[dir="rtl"] .ltr-nums {
+  direction: ltr;
+  text-align: start;
+}
+
+/* Flip directional chevron icons in RTL so they point left */
+[dir="rtl"] .icon-chevron {
+  transform: scaleX(-1);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   CUSTOM CONTAINER UTILITY
+   A reusable container class for consistent max-width layout across all sections
+   ───────────────────────────────────────────────────────────────────────── */
+@utility container-main {
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@utility container-app {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
