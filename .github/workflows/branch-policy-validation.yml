@@ -13,6 +13,8 @@ jobs:
         run: |
           BASE="${{ github.event.pull_request.base.ref }}"
           HEAD="${{ github.event.pull_request.head.ref }}"
+          # TODO: Currently hardcoded for testing. In future, replace this with the
+          # Terraform/GitHub Actions template variable: "false"
           ENFORCE_RULESETS="false"
 
           echo "Source: $HEAD"
