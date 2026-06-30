@@ -13,7 +13,7 @@ jobs:
         run: |
           BASE="${{ github.event.pull_request.base.ref }}"
           HEAD="${{ github.event.pull_request.head.ref }}"
-          ENFORCE_RULESETS="false"
+          ENFORCE_RULESETS="true"
 
           echo "Source: $HEAD"
           echo "Target: $BASE"
